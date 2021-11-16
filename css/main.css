@@ -380,7 +380,8 @@ section.me ul.in li p::before {
     cursor: pointer;
 }
 
-/* section.me .title {
+/*  내가한거
+section.me .title {
     margin-bottom: 50px;
 }
 section.me .list {
@@ -420,4 +421,58 @@ section.me .list li a.more {
 section.me .list li a i {
     color: #ff8342;
 } 
- */
+  내가한거 끝 */
+
+section.sns .title {
+    margin-bottom: 100px;
+    text-align: center;
+}
+section.sns ul {
+    width: 74%;
+    margin: 0 auto;
+}
+section.sns ul li {
+    width: 33.33333%;
+    float: left;
+}
+section.sns ul li a .img-box {
+    overflow: hidden;
+    height: 250px;
+    position: relative;
+}
+section.sns ul li a .img-box img {
+    height: 100%;
+    width: 95%;
+}
+section.sns ul li a .img-box::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 100%;
+    background: rgba(218, 86, 10, 0.993);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+}
+section.sns ul li a .img-box:hover::after {
+    width: 100%;
+}
+
+section.sns ul li a .bottom {
+    padding: 20px 20px;
+    font-weight: 700;
+    font-size: 18px;
+}
+section.sns ul li a .bottom .color {
+    color: #ff8342;
+    font-size: 16px;
+}
+section.sns ul li a .bottom p {
+    padding: 5px 0;
+}
+section.sns ul li a .bottom .time {
+    font-size: 13px;
+    margin-top: 30px;
+    color: #ddd;
+}
